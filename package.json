@@ -1,0 +1,23 @@
+{
+  "name": "exp3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atul707/Exp3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Atul707/Exp3/issues"
+  },
+  "homepage": "https://github.com/Atul707/Exp3#readme",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}
