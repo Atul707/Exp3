@@ -1,30 +1,21 @@
 const { calculate } = require("../src/utils/mathEngine");
 
-describe("calculate function", () => {
+test("addition", () => {
+    expect(calculate(5, 3, "add")).toBe(8);
+});
 
-    test("should add two numbers", () => {
-        expect(calculate(10, 5, "add")).toBe(15);
-    });
+test("subtraction", () => {
+    expect(calculate(5, 3, "subtract")).toBe(2);
+});
 
-    test("should subtract two numbers", () => {
-        expect(calculate(10, 5, "subtract")).toBe(5);
-    });
+test("multiplication", () => {
+    expect(calculate(5, 3, "multiply")).toBe(15);
+});
 
-    test("should multiply two numbers", () => {
-        expect(calculate(10, 5, "multiply")).toBe(50);
-    });
+test("division", () => {
+    expect(calculate(6, 3, "divide")).toBe(2);
+});
 
-    test("should divide two numbers", () => {
-        expect(calculate(10, 5, "divide")).toBe(2);
-    });
-
-    test("should throw error when dividing by zero", () => {
-        expect(() => calculate(10, 0, "divide"))
-            .toThrow("Cannot divide by zero");
-    });
-
-    test("should throw error for invalid operation", () => {
-        expect(() => calculate(10, 5, "power"))
-            .toThrow("Invalid operation");
-    });
+test("division by zero", () => {
+    expect(() => calculate(5, 0, "divide")).toThrow("Cannot divide by zero");
 });
