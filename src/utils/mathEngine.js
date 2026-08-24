@@ -20,8 +20,4 @@ function calculate(a, b, operation) {
     }
 }
 
-function evaluateExpression(expression) {
-    return eval(expression);
-}
-
-module.exports = { calculate, evaluateExpression };
+module.exports = { calculate };
